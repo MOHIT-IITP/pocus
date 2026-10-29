@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.mohiitp.pocus",
+  "name": "Pocus",
+  "version": "1.0.0",
+  "author": "Mohit (mohiitp)",
+  "license": "MIT",
+  "description": "Track productive and off time with a filling cup, a 14-day trend, and a 52-week focus heatmap.",
+  "kinds": ["service", "bar-widget"],
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Pocus",
+    "description": "A cup that fills while you focus, with productive/off time totals, a trend graph, and a heatmap.",
+    "category": "Productivity",
+    "defaultSection": "right",
+    "allowMultiple": false,
+    "defaults": {
+      "goalHours": 4
+    },
+    "schema": [
+      {
+        "key": "goalHours",
+        "type": "number",
+        "label": "Daily productive goal (hours)",
+        "defaultValue": 4
+      }
+    ]
+  }
+}
